@@ -30,11 +30,11 @@
 @endif
 
 @if($step === 1)
-    <button id="step1-button" type="button" data-url="{{ route('step1') }}" onclick="step1()">submit</button><br>
+    <button id="step1-button" type="button" data-url="/step1" onclick="step1()">submit</button><br>
 @elseif($step === 2)
-    <button id="step2-button" type="button" data-url="{{ route('step2') }}" onclick="step2()">submit</button><br>
+    <button id="step2-button" type="button" data-url="/step2" onclick="step2()">submit</button><br>
 @elseif($step === 3)
-    <button id="step3-button" type="button" data-url="{{ route('step3') }}" onclick="step3()">submit</button><br>
+    <button id="step3-button" type="button" data-url="/step3" onclick="step3()">submit</button><br>
 @endif
 
 <a href="/?step=1"> Korak 1 </a>

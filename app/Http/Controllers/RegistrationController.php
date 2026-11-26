@@ -15,7 +15,7 @@ class RegistrationController extends Controller
         $request->session()->put('registration.name', $request->name);
 
         return response()->json([
-            'next' => url('/?step=2'),
+            'next' => '/?step=2',
         ]);
     }
 
@@ -28,7 +28,7 @@ class RegistrationController extends Controller
         $request->session()->put('registration.email', $request->email);
 
         return response()->json([
-            'next' => url('/?step=3'),
+            'next' => '/?step=3',
         ]);
     }
 
@@ -41,7 +41,7 @@ class RegistrationController extends Controller
         $request->session()->put('registration.accept_terms', true);
 
         return response()->json([
-            'next' => url('/?step=3'),
+            'next' => '/?step=3',
             'can_finish' => true,
         ]);
     }
